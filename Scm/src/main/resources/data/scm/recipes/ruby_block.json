@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:ruby"
+    }
+  },
+  "result": {
+    "item": "scm:ruby_block",
+    "count": 1
+  }
+}

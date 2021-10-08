@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "M M",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:topaz"
+    }
+  },
+  "result": {
+    "item": "scm:topaz_chestplate",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "M M",
+    "M M"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:mythril_shard"
+    }
+  },
+  "result": {
+    "item": "scm:mythril_leggings",
+    "count": 1
+  }
+}

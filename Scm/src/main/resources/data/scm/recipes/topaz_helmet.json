@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "M M"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:topaz"
+    }
+  },
+  "result": {
+    "item": "scm:topaz_helmet",
+    "count": 1
+  }
+}

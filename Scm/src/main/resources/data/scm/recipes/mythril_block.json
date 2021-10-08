@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:mythril_shard"
+    }
+  },
+  "result": {
+    "item": "scm:mythril_block",
+    "count": 1
+  }
+}

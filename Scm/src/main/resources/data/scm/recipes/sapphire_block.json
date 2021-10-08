@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "MMM",
+    "MMM",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "scm:sapphire"
+    }
+  },
+  "result": {
+    "item": "scm:sapphire_block",
+    "count": 1
+  }
+}
