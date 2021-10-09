@@ -3,11 +3,10 @@ package com.silverbeam.scm.registry;
 import com.silverbeam.scm.Scm;
 import com.silverbeam.scm.registry.armor.*;
 import com.silverbeam.scm.registry.tools.*;
+import com.silverbeam.scm.registry.tools.weapons.GreatswordItem;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -57,6 +56,11 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_ore"), MYTHRIL_ORE);
 
         //tools
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_greatsword"), new GreatswordItem(new ToolMaterialRuby()));
+
+
+
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_pickaxe"), new RubyPickaxe(new ToolMaterialRuby()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_axe"), new RubyAxe(new ToolMaterialRuby()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_hoe"), new RubyHoe(new ToolMaterialRuby()));

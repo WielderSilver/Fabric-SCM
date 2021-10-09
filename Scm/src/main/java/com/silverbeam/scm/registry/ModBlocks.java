@@ -60,7 +60,7 @@ public class ModBlocks {
             .strength(1.5f, 6.0f)
             .sounds(BlockSoundGroup.STONE));
 
-    public static final RubyOre RUBY_ORE = new RubyOre(FabricBlockSettings
+    public static final Block RUBY_ORE = new RubyOre(FabricBlockSettings
             .of(Material.STONE)
             .breakByTool(FabricToolTags.PICKAXES,2)
             .requiresTool()
