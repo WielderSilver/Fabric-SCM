@@ -6,7 +6,6 @@ import com.silverbeam.scm.registry.tools.*;
 import com.silverbeam.scm.registry.tools.weapons.GreatswordItem;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
