@@ -4,8 +4,11 @@ import com.silverbeam.scm.Scm;
 import com.silverbeam.scm.registry.armor.*;
 import com.silverbeam.scm.registry.tools.*;
 import com.silverbeam.scm.registry.tools.weapons.GreatswordItem;
+import com.silverbeam.scm.registry.tools.weapons.RapierItem;
+import net.minecraft.block.Material;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -37,6 +40,23 @@ public class ModItems
     public static final ArmorMaterial EMERALD_ARMOR = new EmeraldArmorMaterial();
     public static final ArmorMaterial AMETHYST_ARMOR = new AmethystArmorMaterial();
 
+    //Weapons
+    public static final GreatswordItem RUBY_GREATSWORD = new GreatswordItem(new ToolMaterialRuby());
+    public static final GreatswordItem AMETHYST_GREATSWORD = new GreatswordItem(new ToolMaterialAmethyst());
+    public static final GreatswordItem SAPPHIRE_GREATSWORD = new GreatswordItem(new ToolMaterialSapphire());
+    public static final GreatswordItem EMERALD_GREATSWORD = new GreatswordItem(new ToolMaterialEmerald());
+    public static final GreatswordItem TOPAZ_GREATSWORD = new GreatswordItem(new ToolMaterialTopaz());
+    public static final GreatswordItem MYTHRIL_GREATSWORD = new GreatswordItem(new ToolMaterialMythril());
+
+    public static final RapierItem RUBY_RAPIER = new RapierItem(new ToolMaterialRuby());
+    public static final RapierItem AMETHYST_RAPIER = new RapierItem(new ToolMaterialAmethyst());
+    public static final RapierItem SAPPHIRE_RAPIER = new RapierItem(new ToolMaterialSapphire());
+    public static final RapierItem EMERALD_RAPIER = new RapierItem(new ToolMaterialEmerald());
+    public static final RapierItem TOPAZ_RAPIER = new RapierItem(new ToolMaterialTopaz());
+    public static final RapierItem MYTHRIL_RAPIER = new RapierItem(new ToolMaterialMythril());
+
+
+
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby"), RUBY);
@@ -55,8 +75,19 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_ore"), MYTHRIL_ORE);
 
         //tools
-
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_greatsword"), new GreatswordItem(new ToolMaterialRuby()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "amethyst_greatsword"), new GreatswordItem(new ToolMaterialAmethyst()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "topaz_greatsword"), new GreatswordItem(new ToolMaterialTopaz()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "emerald_greatsword"), new GreatswordItem(new ToolMaterialEmerald()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "sapphire_greatsword"), new GreatswordItem(new ToolMaterialSapphire()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_greatsword"), new GreatswordItem(new ToolMaterialMythril()));
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_rapier"), new RapierItem(new ToolMaterialRuby()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "amethyst_rapier"), new RapierItem(new ToolMaterialAmethyst()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "topaz_rapier"), new RapierItem(new ToolMaterialTopaz()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "emerald_rapier"), new RapierItem(new ToolMaterialEmerald()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "sapphire_rapier"), new RapierItem(new ToolMaterialSapphire()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_rapier"), new RapierItem(new ToolMaterialMythril()));
 
 
 

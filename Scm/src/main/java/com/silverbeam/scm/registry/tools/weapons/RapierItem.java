@@ -5,12 +5,11 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SwordItem;
 import net.minecraft.item.ToolMaterial;
 
-public class GreatswordItem extends SwordItem {
+public class RapierItem extends SwordItem {
 
 
-    public GreatswordItem(ToolMaterial material) {
-        super(material, 6, -3.5f, new Item.Settings().group(ItemGroup.COMBAT));
+    public RapierItem(ToolMaterial material) {
+        super(material, 2, -2.2f, new Item.Settings().group(ItemGroup.COMBAT));
     }
 
 }
-
