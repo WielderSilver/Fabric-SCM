@@ -47,6 +47,12 @@ public class ModItems
     public static final GreatswordItem EMERALD_GREATSWORD = new GreatswordItem(new ToolMaterialEmerald());
     public static final GreatswordItem TOPAZ_GREATSWORD = new GreatswordItem(new ToolMaterialTopaz());
     public static final GreatswordItem MYTHRIL_GREATSWORD = new GreatswordItem(new ToolMaterialMythril());
+    public static final GreatswordItem WOODEN_GREATSWORD = new GreatswordItem(ToolMaterials.WOOD);
+    public static final GreatswordItem STONE_GREATSWORD = new GreatswordItem(ToolMaterials.STONE);
+    public static final GreatswordItem IRON_GREATSWORD = new GreatswordItem(ToolMaterials.IRON);
+    public static final GreatswordItem GOLD_GREATSWORD = new GreatswordItem(ToolMaterials.GOLD);
+    public static final GreatswordItem DIAMOND_GREATSWORD = new GreatswordItem(ToolMaterials.DIAMOND);
+    public static final GreatswordItem NETHERITE_GREATSWORD = new GreatswordItem(ToolMaterials.NETHERITE);
 
     public static final RapierItem RUBY_RAPIER = new RapierItem(new ToolMaterialRuby());
     public static final RapierItem AMETHYST_RAPIER = new RapierItem(new ToolMaterialAmethyst());
@@ -54,7 +60,12 @@ public class ModItems
     public static final RapierItem EMERALD_RAPIER = new RapierItem(new ToolMaterialEmerald());
     public static final RapierItem TOPAZ_RAPIER = new RapierItem(new ToolMaterialTopaz());
     public static final RapierItem MYTHRIL_RAPIER = new RapierItem(new ToolMaterialMythril());
-
+    public static final RapierItem WOODEN_RAPIER = new RapierItem(ToolMaterials.WOOD);
+    public static final RapierItem STONE_RAPIER = new RapierItem(ToolMaterials.STONE);
+    public static final RapierItem IRON_RAPIER = new RapierItem(ToolMaterials.IRON);
+    public static final RapierItem GOLD_RAPIER = new RapierItem(ToolMaterials.GOLD);
+    public static final RapierItem DIAMOND_RAPIER = new RapierItem(ToolMaterials.DIAMOND);
+    public static final RapierItem NETHERITE_RAPIER = new RapierItem(ToolMaterials.NETHERITE);
 
 
 
@@ -81,6 +92,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "emerald_greatsword"), new GreatswordItem(new ToolMaterialEmerald()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "sapphire_greatsword"), new GreatswordItem(new ToolMaterialSapphire()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_greatsword"), new GreatswordItem(new ToolMaterialMythril()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "wooden_greatsword"), new GreatswordItem(ToolMaterials.WOOD));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "stone_greatsword"), new GreatswordItem(ToolMaterials.STONE));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "iron_greatsword"), new GreatswordItem(ToolMaterials.IRON));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "gold_greatsword"), new GreatswordItem(ToolMaterials.GOLD));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "diamond_greatsword"), new GreatswordItem(ToolMaterials.DIAMOND));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "netherite_greatsword"), new GreatswordItem(ToolMaterials.NETHERITE));
 
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_rapier"), new RapierItem(new ToolMaterialRuby()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "amethyst_rapier"), new RapierItem(new ToolMaterialAmethyst()));
@@ -88,7 +105,12 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "emerald_rapier"), new RapierItem(new ToolMaterialEmerald()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "sapphire_rapier"), new RapierItem(new ToolMaterialSapphire()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_rapier"), new RapierItem(new ToolMaterialMythril()));
-
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "wooden_rapier"), new GreatswordItem(ToolMaterials.WOOD));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "stone_rapier"),new GreatswordItem(ToolMaterials.STONE));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "iron_rapier"), new GreatswordItem(ToolMaterials.IRON));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "gold_rapier"), new GreatswordItem(ToolMaterials.GOLD));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "diamond_rapier"), new GreatswordItem(ToolMaterials.DIAMOND));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "netherite_rapier"), new GreatswordItem(ToolMaterials.NETHERITE));
 
 
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "ruby_pickaxe"), new RubyPickaxe(new ToolMaterialRuby()));
