@@ -1,10 +1,14 @@
 package com.silverbeam.scm.registry.tools.weapons;
 
-import net.minecraft.item.*;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
+import net.minecraft.item.ToolMaterial;
 
 public class KeybladeItem extends SwordItem {
-    public KeybladeItem(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
-        super(toolMaterial, attackDamage, attackSpeed, settings);
+    public KeybladeItem(ToolMaterial material) {
+        super(material, 2, -2.2f, new Item.Settings().group(ItemGroup.COMBAT));
     }
+
 }
-    
+

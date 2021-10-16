@@ -4,11 +4,11 @@ import com.silverbeam.scm.Scm;
 import com.silverbeam.scm.registry.armor.*;
 import com.silverbeam.scm.registry.tools.*;
 import com.silverbeam.scm.registry.tools.weapons.GreatswordItem;
+import com.silverbeam.scm.registry.tools.weapons.KeybladeItem;
 import com.silverbeam.scm.registry.tools.weapons.RapierItem;
-import net.minecraft.block.Material;
+import com.silverbeam.scm.registry.tools.weapons.ToolMaterialKeybladeOne;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.*;
-import net.minecraft.recipe.Ingredient;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -19,6 +19,22 @@ public class ModItems
     public static final Item SAPPHIRE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     public static final Item TOPAZ = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
     public static final Item MYTHRIL_SHARD = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
+    public static final Item KINGDOM_KEY_HILT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item KINGDOM_KEY_BLADE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item KINGDOM_KEY_POINT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
+    public static final Item KINGDOM_KEY_D_HILT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item KINGDOM_KEY_D_BLADE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item KINGDOM_KEY_D_POINT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
+    public static final Item LADY_LUCK_HILT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item LADY_LUCK_BLADE = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+    public static final Item LADY_LUCK_POINT = new Item(new Item.Settings().group(ItemGroup.MATERIALS));
+
+    public static final KeybladeItem KINGDOM_KEY = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem KINGDOM_KEY_D = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem LADY_LUCK = new KeybladeItem(new ToolMaterialKeybladeOne());
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
@@ -66,6 +82,8 @@ public class ModItems
     public static final RapierItem GOLD_RAPIER = new RapierItem(ToolMaterials.GOLD);
     public static final RapierItem DIAMOND_RAPIER = new RapierItem(ToolMaterials.DIAMOND);
     public static final RapierItem NETHERITE_RAPIER = new RapierItem(ToolMaterials.NETHERITE);
+
+
 
 
 
@@ -180,6 +198,22 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_chestplate"), new MythrilArmor(MYTHRIL_ARMOR, EquipmentSlot.CHEST));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_leggings"), new MythrilArmor(MYTHRIL_ARMOR, EquipmentSlot.LEGS));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "mythril_boots"), new MythrilArmor(MYTHRIL_ARMOR, EquipmentSlot.FEET));
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_hilt"), KINGDOM_KEY_HILT);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_blade"), KINGDOM_KEY_BLADE);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_point"), KINGDOM_KEY_POINT);
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d_hilt"), KINGDOM_KEY_D_HILT);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d_blade"), KINGDOM_KEY_D_BLADE);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d_point"), KINGDOM_KEY_D_POINT);
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck_hilt"), LADY_LUCK_HILT);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck_blade"), LADY_LUCK_BLADE);
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck_point"), LADY_LUCK_POINT);
+
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck"), new KeybladeItem(new ToolMaterialKeybladeOne()));
 
 
     }

@@ -3,8 +3,6 @@ package com.silverbeam.scm.registry.tools;
 import com.silverbeam.scm.registry.ModItems;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -41,8 +39,7 @@ public class ToolMaterialRuby implements ToolMaterial {
 
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 2 * level, level - 1));
+            ((LivingEntity) target).setOnFireFor(40000);
         }
-
     }
 }

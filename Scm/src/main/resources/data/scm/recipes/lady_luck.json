@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P",
+    "B",
+    "H"
+  ],
+  "key": {
+    "P": {
+      "item": "scm:lady_luck_point"
+    },
+    "B": {
+      "item": "scm:lady_luck_blade"
+    },
+    "H": {
+      "item": "scm:lady_luck_hilt"
+    }
+  },
+  "result": {"item": "scm:lady_luck",
+    "count": 1
+  }
+}

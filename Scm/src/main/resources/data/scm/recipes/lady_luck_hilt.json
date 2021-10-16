@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GAG",
+    "AAA",
+    "ARA"
+  ],
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "item": "scm:amethyst"
+    },
+    "R":
+    {
+      "item": "scm:ruby"
+    }
+  },
+  "result": {"item": "scm:lady_luck_hilt",
+    "count": 1
+  }
+}
