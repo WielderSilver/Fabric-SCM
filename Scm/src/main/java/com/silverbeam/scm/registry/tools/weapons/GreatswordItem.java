@@ -1,9 +1,11 @@
 package com.silverbeam.scm.registry.tools.weapons;
 
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterial;
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.item.*;
+import net.minecraft.util.Hand;
 
 public class GreatswordItem extends SwordItem {
 
@@ -11,6 +13,5 @@ public class GreatswordItem extends SwordItem {
     public GreatswordItem(ToolMaterial material) {
         super(material, 6, -3.5f, new Item.Settings().group(ItemGroup.COMBAT));
     }
-
 }
 

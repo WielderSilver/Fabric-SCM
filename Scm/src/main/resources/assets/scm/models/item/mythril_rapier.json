@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "scmcraft:items/mythril_rapier"
+    "layer0": "scm:items/mythril_rapier"
   },
   "display": {
     "firstperson_righthand": {

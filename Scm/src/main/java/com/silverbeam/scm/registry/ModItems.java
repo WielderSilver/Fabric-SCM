@@ -35,6 +35,8 @@ public class ModItems
     public static final KeybladeItem KINGDOM_KEY = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem KINGDOM_KEY_D = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem LADY_LUCK = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem SOUL_EATER = new KeybladeItem(new ToolMaterialKeybladeOne());
+
 
     //Block Items
     public static final BlockItem RUBY_BLOCK = new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
@@ -214,6 +216,7 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "soul_eater"), new KeybladeItem(new ToolMaterialKeybladeOne()));
 
 
     }

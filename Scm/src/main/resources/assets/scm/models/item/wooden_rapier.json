@@ -1,7 +1,7 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "scmcraft:items/wooden_rapier"
+    "layer0": "scm:items/wooden_rapier"
   },
   "display": {
     "firstperson_righthand": {
