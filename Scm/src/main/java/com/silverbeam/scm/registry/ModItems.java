@@ -3,6 +3,7 @@ package com.silverbeam.scm.registry;
 import com.silverbeam.scm.Scm;
 import com.silverbeam.scm.registry.armor.*;
 import com.silverbeam.scm.registry.tools.*;
+import com.silverbeam.scm.registry.tools.toolmaterials.*;
 import com.silverbeam.scm.registry.tools.weapons.GreatswordItem;
 import com.silverbeam.scm.registry.tools.weapons.KeybladeItem;
 import com.silverbeam.scm.registry.tools.weapons.RapierItem;
@@ -36,6 +37,8 @@ public class ModItems
     public static final KeybladeItem KINGDOM_KEY_D = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem LADY_LUCK = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem SOUL_EATER = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem CRAB_CLAW = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem METAL_CHOCOBO = new KeybladeItem(new ToolMaterialKeybladeOne());
 
 
     //Block Items
@@ -217,6 +220,8 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "kingdom_key_d"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "lady_luck"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "soul_eater"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "crab_claw"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "metal_chocobo"), new KeybladeItem(new ToolMaterialKeybladeOne()));
 
 
     }

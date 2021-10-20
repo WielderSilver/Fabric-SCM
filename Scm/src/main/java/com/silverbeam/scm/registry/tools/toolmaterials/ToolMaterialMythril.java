@@ -1,38 +1,37 @@
-package com.silverbeam.scm.registry.tools;
+package com.silverbeam.scm.registry.tools.toolmaterials;
 
 import com.silverbeam.scm.registry.ModItems;
-import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ToolMaterialEmerald implements ToolMaterial {
+public class ToolMaterialMythril implements ToolMaterial {
     @Override
     public int getDurability() {
-        return 191;
+        return 32;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 5.0f;
+        return 12.0f;
     }
 
     @Override
     public float getAttackDamage() {
-        return 2.0f;
+        return 0.0f;
     }
 
     @Override
     public int getMiningLevel() {
-        return 2;
+        return 0;
     }
 
     @Override
     public int getEnchantability() {
-        return 18;
+        return 22;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(Items.EMERALD);
+        return Ingredient.ofItems(ModItems.MYTHRIL_SHARD);
     }
 }

@@ -1,10 +1,13 @@
-package com.silverbeam.scm.registry.tools;
+package com.silverbeam.scm.registry.tools.toolmaterials;
 
 import com.silverbeam.scm.registry.ModItems;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class ToolMaterialTopaz implements ToolMaterial {
+public class ToolMaterialRuby implements ToolMaterial {
     @Override
     public int getDurability() {
         return 191;
@@ -32,6 +35,13 @@ public class ToolMaterialTopaz implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return Ingredient.ofItems(ModItems.TOPAZ);
+        return Ingredient.ofItems(ModItems.RUBY);
+    }
+
+    public void onTargetDamaged(LivingEntity user, Entity target, int level) {
+        if(target instanceof LivingEntity) {
+            ((LivingEntity) target).setOnFireFor(40000);
+        }
     }
 }
+

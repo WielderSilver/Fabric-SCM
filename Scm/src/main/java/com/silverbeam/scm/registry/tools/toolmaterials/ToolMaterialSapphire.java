@@ -1,4 +1,4 @@
-package com.silverbeam.scm.registry.tools;
+package com.silverbeam.scm.registry.tools.toolmaterials;
 
 import com.silverbeam.scm.registry.ModItems;
 import net.minecraft.entity.Entity;
