@@ -13,5 +13,6 @@ public class GreatswordItem extends SwordItem {
     public GreatswordItem(ToolMaterial material) {
         super(material, 6, -3.5f, new Item.Settings().group(ItemGroup.COMBAT));
     }
+
 }
 

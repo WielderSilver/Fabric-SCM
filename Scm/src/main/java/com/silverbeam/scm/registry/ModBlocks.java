@@ -1,7 +1,10 @@
 package com.silverbeam.scm.registry;
 
 import com.silverbeam.scm.Scm;
+import com.silverbeam.scm.registry.oreblocks.MythrilOre;
 import com.silverbeam.scm.registry.oreblocks.RubyOre;
+import com.silverbeam.scm.registry.oreblocks.SapphireOre;
+import com.silverbeam.scm.registry.oreblocks.TopazOre;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
@@ -32,28 +35,28 @@ public class ModBlocks {
             .strength(5.0f, 15.0f)
             .sounds(BlockSoundGroup.AMETHYST_BLOCK));
 
-    public static final Block MYTHRIL_BLOCK = new Block(FabricBlockSettings
+    public static final Block MYTHRIL_BLOCK = new MythrilOre(FabricBlockSettings
             .of(Material.AMETHYST)
             .breakByTool(FabricToolTags.PICKAXES,2)
             .requiresTool()
             .strength(5.0f, 15.0f)
             .sounds(BlockSoundGroup.METAL));
 
-    public static final Block SAPPHIRE_ORE = new Block(FabricBlockSettings
+    public static final Block SAPPHIRE_ORE = new SapphireOre(FabricBlockSettings
             .of(Material.STONE)
             .breakByTool(FabricToolTags.PICKAXES,2)
             .requiresTool()
             .strength(1.5f, 6.0f)
             .sounds(BlockSoundGroup.STONE));
 
-    public static final Block TOPAZ_ORE = new Block(FabricBlockSettings
+    public static final Block TOPAZ_ORE = new TopazOre(FabricBlockSettings
             .of(Material.STONE)
             .breakByTool(FabricToolTags.PICKAXES,2)
             .requiresTool()
             .strength(1.5f, 6.0f)
             .sounds(BlockSoundGroup.STONE));
 
-    public static final Block MYTHRIL_ORE = new Block(FabricBlockSettings
+    public static final Block MYTHRIL_ORE = new MythrilOre(FabricBlockSettings
             .of(Material.STONE)
             .breakByTool(FabricToolTags.PICKAXES,1)
             .requiresTool()

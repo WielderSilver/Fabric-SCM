@@ -39,6 +39,9 @@ public class ModItems
     public static final KeybladeItem SOUL_EATER = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem CRAB_CLAW = new KeybladeItem(new ToolMaterialKeybladeOne());
     public static final KeybladeItem METAL_CHOCOBO = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem OATHKEEPER = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem DIVINE_ROSE = new KeybladeItem(new ToolMaterialKeybladeOne());
+    public static final KeybladeItem DIAMOND_DUST = new KeybladeItem(new ToolMaterialKeybladeOne());
 
 
     //Block Items
@@ -222,6 +225,9 @@ public class ModItems
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "soul_eater"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "crab_claw"), new KeybladeItem(new ToolMaterialKeybladeOne()));
         Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "metal_chocobo"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "oathkeeper"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "divine_rose"), new KeybladeItem(new ToolMaterialKeybladeOne()));
+        Registry.register(Registry.ITEM, new Identifier(Scm.MOD_ID, "diamond_dust"), new KeybladeItem(new ToolMaterialKeybladeOne()));
 
 
     }
