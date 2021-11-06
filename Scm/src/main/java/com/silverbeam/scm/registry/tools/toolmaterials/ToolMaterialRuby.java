@@ -38,10 +38,4 @@ public class ToolMaterialRuby implements ToolMaterial {
         return Ingredient.ofItems(ModItems.RUBY);
     }
 
-    public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(target instanceof LivingEntity) {
-            ((LivingEntity) target).setOnFireFor(40000);
-        }
-    }
 }
-
